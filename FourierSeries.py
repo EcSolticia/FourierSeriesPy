@@ -3,7 +3,7 @@ import sympy
 
 x = sympy.Symbol('x') #variable
 p = sympy.Symbol('p') #half-period
-pie = sympy.Symbol('pie') #pi symbol
+pie = sympy.pi
 
 f = x
 
@@ -26,6 +26,3 @@ def build_list_b():
     for i in range(1, series_size):
         b_i = sympy.integrate(f * delta(i, 1), (x, -p, p)) / p
         list_b.append(b_i)
-
-build_list_a(); build_list_b();
-print(list_a, list_b);
