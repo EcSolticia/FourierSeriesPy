@@ -5,6 +5,7 @@ x = sympy.Symbol('x') #variable
 p = sympy.Symbol('p') #half-period
 pie = sympy.pi
 
+#enter symbolic function here
 f = x
 
 list_a = [0]; list_b = [0];
